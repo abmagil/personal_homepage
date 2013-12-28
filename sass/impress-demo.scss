@@ -249,23 +249,25 @@ a:focus {
 }
 
 #ontoepic.present .upsidedown {
-    @include rotate(180deg);
-    @include delay(1s);
+    @include rotate(-180deg);
+    @include delay(0.25s);
 }
 
-#concepts {
+.concepts.future, {
     display:none;
-    perspective: 1000;
-    @include transition(0.6s);
-    transform-style: preserve-3d;
+    // perspective: 1000;
+    // @include transition(0.6s);
+    // transform-style: preserve-3d;
 }
 
-#concepts.present {
-    display: inline;
+.concepts.present, .concepts.past {
+    display: block;
 }
 
-#concepts.future {
 
+.big {
+    font-size: 90px;
+    line-height: 150px;
 }
 
 /*
