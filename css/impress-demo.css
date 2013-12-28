@@ -270,7 +270,7 @@ a:focus {
   font-size: 90px;
   line-height: 150px; }
 
-#but.past {
+#but.past, #but.future {
   display: none; }
 
 /*
