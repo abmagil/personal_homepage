@@ -253,78 +253,16 @@ a:focus {
     @include delay(0.25s);
 }
 
-.concepts.future, {
-    display:none;
-    // perspective: 1000;
-    // @include transition(0.6s);
-    // transform-style: preserve-3d;
-}
-
-.concepts.present, .concepts.past {
-    display: block;
-}
-
 
 .big {
     font-size: 90px;
     line-height: 150px;
 }
 
-/*
-    This step has some animated text ...
-*/
-#ing { width: 500px }
-
-/*
-    ... so we define display to `inline-block` to enable transforms and
-    transition duration to 0.5s ...
-*/
-#ing b {
-    display: inline-block;
-    
+#but.past {
+    display: none;
 }
 
-/*
-    ... and we want 'positioning` word to move up a bit when the step gets
-    `present` class ...
-*/
-#ing.present .positioning {
-    @include translateY(-10px);
-}
-
-/*
-    ... 'rotating' to rotate a quarter of a second later ...
-*/
-#ing.present .rotating {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform:    rotate(-10deg);
-    -ms-transform:     rotate(-10deg);
-    -o-transform:      rotate(-10deg);
-    transform:         rotate(-10deg);
-
-    -webkit-transition-delay: 0.25s;
-    -moz-transition-delay:    0.25s;
-    -ms-transition-delay:     0.25s;
-    -o-transition-delay:      0.25s;
-    transition-delay:         0.25s;
-}
-
-/*
-    ... and 'scaling' to scale down after another quarter of a second.
-*/
-#ing.present .scaling {
-    -webkit-transform: scale(0.7);
-    -moz-transform:    scale(0.7);
-    -ms-transform:     scale(0.7);
-    -o-transform:      scale(0.7);
-    transform:         scale(0.7);
-
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay:    0.5s;
-    -ms-transition-delay:     0.5s;
-    -o-transition-delay:      0.5s;
-    transition-delay:         0.5s;
-}
 
 /*
     The 'imagination' step is again some boring font-sizing.
