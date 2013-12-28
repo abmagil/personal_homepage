@@ -247,32 +247,33 @@ a:focus {
 #title .footnote {
   font-size: 32px; }
 
+.upsidedown {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  display: inline-block; }
+
 #ontoepic.present .upsidedown {
-  display: inline-block;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: rotateX(-180deg);
-  -moz-transform: rotateX(-180deg);
-  -ms-transform: rotateX(-180deg);
-  -o-transform: rotateX(-180deg);
-  transform: rotateX(-180deg);
-  -webkit-transition-delay: 1.5s;
-  -moz-transition-delay: 1.5s;
-  -ms-transition-delay: 1.5s;
-  -o-transition-delay: 1.5s;
-  transition-delay: 1.5s; }
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s; }
 
 #concepts {
   display: none;
   perspective: 1000;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
   transform-style: preserve-3d; }
 
 #concepts.present {

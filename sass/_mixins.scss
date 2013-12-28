@@ -7,11 +7,11 @@
 }
 
 @mixin transition($time) {
-        -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+    -webkit-transition: $time;
+    -moz-transition:    $time;
+    -ms-transition:     $time;
+    -o-transition:      $time;
+    transition:         $time;
 }
 
 @mixin rotate($deg) {

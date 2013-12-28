@@ -240,13 +240,17 @@ a:focus {
     font-size: 32px;
 }
 
-#ontoepic.present {
-    .upsidedown {
-        display: inline-block;
-        @include transition(1.5s);
-        @include rotateX(-180deg);
-        @include delay(1.5s);
-    }
+.upsidedown {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    display: inline-block;
+}
+
+#ontoepic.present .upsidedown {
+    @include rotate(180deg);
+    @include delay(1s);
 }
 
 #concepts {
