@@ -250,6 +250,7 @@ a:focus {
 .upsidedown {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   display: inline-block; }
@@ -566,3 +567,5 @@ a:focus {
 
     But it was fun to learn about it, wasn't it?
 */
+footer img {
+  height: 32px; }

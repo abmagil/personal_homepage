@@ -6,6 +6,15 @@
     transform:         translateY($param);
 }
 
+@mixin translateZ($param) {
+   -webkit-transform:  translateZ($param);
+    -moz-transform:    translateZ($param);
+    -ms-transform:     translateZ($param);
+    -o-transform:      translateZ($param);
+    transform:         translateZ($param);
+}
+
+
 @mixin transition($time) {
     -webkit-transition: $time;
     -moz-transition:    $time;
@@ -44,4 +53,28 @@
     -ms-transition-delay:     $s;
     -o-transition-delay:      $s;
     transition-delay:         $s;
+}
+
+@mixin background-radial-gradient($from, $to) {
+    background: -webkit-radial-gradient($from, $to);
+    background:    -moz-radial-gradient($from, $to);
+    background:     -ms-radial-gradient($from, $to);
+    background:      -o-radial-gradient($from, $to);
+    background:         radial-gradient($from, $to);
+}
+
+@mixin transition($s) {
+    -webkit-transition: $s;
+    -moz-transition:    $s;
+    -ms-transition:     $s;
+    -o-transition:      $s;
+    transition:         $s;
+}
+
+@mixin box-sizing($sizing) {
+    -webkit-box-sizing: $sizing;
+    -moz-box-sizing:    $sizing;
+    -ms-box-sizing:     $sizing;
+    -o-box-sizing:      $sizing;
+    box-sizing:         $sizing;
 }
