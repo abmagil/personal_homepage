@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  font-family: Cinzel, sans-serif;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+
+  &__contact {
+    p {
+      margin: 0;
+      text-align: right;
+    }
+
+    a {
+      text-decoration: none;
+      color: black; 
+    }
+
+    .github:before {
+      content: url("../../img/GitHub.svg");
+    }
+  }
+
+  &__personal {
+    .name {
+      font-weight: 100;
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .address {
+      display: flex;
+      font-size: 22px;
+      justify-content: space-between;
+    }
+  }
+}
