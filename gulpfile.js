@@ -1,10 +1,11 @@
-var path       = require('path');
-var gulp       = require('gulp');
-var wrap       = require('gulp-wrap');
 var concat     = require('gulp-concat');
-var merge      = require('merge-stream');
+var gulp       = require('gulp');
 var handlebars = require('gulp-handlebars');
+var livereload = require('gulp-livereload');
+var merge      = require('merge-stream');
+var path       = require('path');
 var scss       = require("gulp-scss");
+var wrap       = require('gulp-wrap');
 
 gulp.task('templates', function() {
 
@@ -49,14 +50,25 @@ gulp.task('compile:css', function() {
       "src/css/*.scss"
   ).pipe(scss())
   .pipe(concat('application.css'))
-  .pipe(gulp.dest("build/css/"));
+  .pipe(gulp.dest("build/css/"))
+  .pipe(livereload());
 })
 
-// Default task
-gulp.task('default', ['copy', 'templates', 'compile:css']);
-
+gulp.task('watch', function() {
+  livereload.listen();
+});
 
 gulp.watch('src/templates/*.hbs', ['default']);
 gulp.watch('index.html', ['default']);
 gulp.watch('gulpfile.js', ['default']);
 gulp.watch('src/css/*.scss', ['compile:css'])
+
+// Watch for changes in 'compiled' files
+gulp.watch('./build/**', function (file) {
+  livereload.listen();
+});
+
+
+// Default task
+gulp.task('default', ['copy', 'templates', 'compile:css', 'watch']);
+
