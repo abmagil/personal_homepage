@@ -1,74 +1,54 @@
 var concat     = require('gulp-concat');
 var gulp       = require('gulp');
-var handlebars = require('gulp-handlebars');
 var livereload = require('gulp-livereload');
 var merge      = require('merge-stream');
+var moment     = require('moment');
 var path       = require('path');
-var scss       = require("gulp-scss");
+var pug        = require('gulp-pug');
+var scss       = require('gulp-scss');
 var wrap       = require('gulp-wrap');
+var jobsData   = require('./my-story');
 
-gulp.task('templates', function() {
 
+gulp.task('reload', function() {
+  jobsData = require('./my-story');
+});
 
-  // Assume all partials start with an underscore
-  // You could also put them in a folder such as source/templates/partials/*.hbs
-  var partials = gulp.src(['src/templates/_*.hbs'])
-    .pipe(handlebars())
-    .pipe(wrap('Handlebars.registerPartial(<%= processPartialName(file.relative) %>, Handlebars.template(<%= contents %>));', {}, {
-      imports: {
-        processPartialName: function(fileName) {
-          // Strip the extension and the underscore
-          // Escape the output with JSON.stringify
-          return JSON.stringify(path.basename(fileName, '.js').substr(1));
-        }
-      }
-    }));
+gulp.task('compile:pug', function() {
+  gulp.src('src/templates/_*.pug')
+    .pipe(pug())
+    .pipe(gulp.dest(''));
 
-  var templates = gulp.src('src/templates/**/[^_]*.hbs')
-    .pipe(handlebars())
-    .pipe(wrap('Handlebars.template(<%= contents %>)'));
-
-  // Output both the partials and the templates as build/js/templates.js
-  return merge(partials, templates)
-    .pipe(concat('templates.js'))
-    .pipe(gulp.dest('build/js/'));
+  gulp.src('index.pug')
+    .pipe(pug({locals: jobsData}))
+    .pipe(gulp.dest('build/'))
+    .pipe(livereload());
 });
 
 gulp.task('copy', function(){
-  gulp.src('node_modules/handlebars/dist/handlebars.runtime.js')
-    .pipe(gulp.dest('build/js/'));
-
-  gulp.src('index.html')
-    .pipe(gulp.dest('build/'));
-
-  gulp.src('src/css/normalize.css')
+  gulp.src('src/css/*.css')
     .pipe(gulp.dest('build/css/'));
 });
 
 gulp.task('compile:css', function() {
-  gulp.src(
-      "src/css/*.scss"
-  ).pipe(scss())
+  gulp.src("src/css/application.scss")
+  .pipe(scss())
   .pipe(concat('application.css'))
   .pipe(gulp.dest("build/css/"))
   .pipe(livereload());
 })
 
-gulp.task('watch', function() {
-  livereload.listen();
-});
-
-gulp.watch('src/templates/*.hbs', ['default']);
-gulp.watch('index.html', ['default']);
-gulp.watch('gulpfile.js', ['default']);
+gulp.watch('index.pug', ['compile:pug']);
+gulp.watch('src/templates/*.pug', ['compile:pug']);
+gulp.watch('gulpfile.js', ['all']);
 gulp.watch('src/css/*.scss', ['compile:css'])
+gulp.watch('./my-story.js', ['reload', 'compile:pug'])
 
-// Watch for changes in 'compiled' files
-gulp.watch('./build/**', function (file) {
+gulp.task("watch", function() {
   livereload.listen();
-});
-
+})
 
 // Default task
-gulp.task('default', ['copy', 'templates', 'compile:css', 'watch']);
+gulp.task('all', ['copy', 'compile:pug', 'compile:css']);
+gulp.task('default', ["reload", "watch"])
 

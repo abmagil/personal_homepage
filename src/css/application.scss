@@ -1,44 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import 'https://fonts.googleapis.com/css?family=Cinzel|Droid+Serif:400,400i,700';
+
+@import "headers";
+@import "header";
+@import "job";
+@import "skills";
+@import "activity";
+
 
 body {
-  max-width: 800px;
+  font-family: 'Droid Serif', serif;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.header {
+main {
   display: flex;
-  font-family: Cinzel, sans-serif;
   justify-content: space-between;
-  border-bottom: 2px solid black;
 
-  &__contact {
-    p {
-      margin: 0;
-      text-align: right;
-    }
-
-    a {
-      text-decoration: none;
-      color: black; 
-    }
-
-    .github:before {
-      content: url("../../img/GitHub.svg");
-    }
+  h2 {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0.3em;
   }
 
-  &__personal {
-    .name {
-      font-weight: 100;
-      font-size: 60px;
-      margin: 0;
-    }
+  h3 {
+    display: inline;
+    font-style: italic;
+    letter-spacing: -.3px;
+  }
 
-    .address {
-      display: flex;
-      font-size: 22px;
-      justify-content: space-between;
-    }
+  p {
+    margin: .25em auto;
+  }
+}
+
+.details {
+  width: 60%;
+  margin-right: 30px;
+}
+
+.miscellanea {
+  width: 40%;
+}
+
+.sm-hide {
+  @media (max-width: 700px) {
+    display: none;
   }
 }

@@ -1,0 +1,62 @@
+.header {
+  border-bottom: 2px solid black;
+  font-family: Cinzel, sans-serif;
+  font-weight: 100;
+  margin-bottom: 20px;
+
+  @media (min-width: 700px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-style: normal;
+    justify-content: flex-end;
+
+    p {
+      font-size: 1.3em;
+      margin: 0;
+      text-align: right;
+      @media (max-width: 700px) {
+        text-align: left;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .github:before {
+      content: url("../../img/GitHub.svg");
+    }
+  }
+
+  &__name {
+    font-weight: lighter;
+    font-size: 60px;
+    letter-spacing: -2px;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  &__personal {
+    .home-address {
+      @media (min-width: 700px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      font-size: 20px;
+      justify-content: space-between;
+
+      *:first-child {
+        margin-right: 15px;
+      }
+
+    }
+  }
+}
