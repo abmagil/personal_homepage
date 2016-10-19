@@ -1,12 +1,11 @@
-@import "https://fonts.googleapis.com/css?family=Cinzel|Droid+Serif:400,400i,700";
+@import "https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text:400,400i,600,600i,700i";
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 .header {
   border-bottom: 2px solid black;
   font-family: Cinzel, sans-serif;
-  font-weight: 100;
-  margin-bottom: 20px; }
+  font-weight: 100; }
   @media (min-width: 700px) {
     .header {
       display: flex;
@@ -33,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
     font-size: 60px;
     letter-spacing: -2px;
+    line-height: 80%;
     margin: 0;
     white-space: nowrap; }
   .header__personal .home-address {
@@ -86,7 +86,9 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic; }
 
 body {
-  font-family: 'Droid Serif', serif;
+  background-color: #fffff8;
+  color: #111111;
+  font-family: 'Crimson Text', serif;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px; }

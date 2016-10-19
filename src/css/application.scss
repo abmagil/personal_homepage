@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Cinzel|Droid+Serif:400,400i,700';
+@import 'https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text:400,400i,600,600i,700i';
 
 @import "headers";
 @import "header";
@@ -6,9 +6,10 @@
 @import "skills";
 @import "activity";
 
-
 body {
-  font-family: 'Droid Serif', serif;
+  background-color: #fffff8;
+  color: #111111;
+  font-family: 'Crimson Text', serif;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
