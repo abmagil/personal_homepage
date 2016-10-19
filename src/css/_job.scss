@@ -3,17 +3,16 @@
   margin-bottom: 15px;
 
   &__title {
-
-    
     @media (max-width: 625px) {
       display: block;
       margin: 5px auto
     }
   }
 
-  @media (min-width: 625px) {
-    &__dates {
-      float: right;
+  &__details {
+    @media (min-width: 625px) {
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -39,7 +38,6 @@
         content: "\00b7";
         margin: 0 0.1em 0 -1em;
       }
-    }
-
+    }    
   }
 }

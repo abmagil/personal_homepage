@@ -1,10 +1,11 @@
 section.job
-  h3.job__title #{value.role}
-  span.job__dates
-    time #{locals.formatDate(value.startDate)}
-    |&ndash;
-    time #{locals.formatDate(value.endDate)}
-  - url = value.url
+  .job__details
+    h3.job__title #{value.role}
+    span.job__dates
+      time #{locals.formatDate(value.startDate)}
+      |&ndash;
+      time #{locals.formatDate(value.endDate)}
+    - url = value.url
   p
     span.job__employer: a(target="_blank" href=url) #{value.employer}
     |, #{value.address}
