@@ -1,6 +1,15 @@
-@import "https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text:400,400i,600,600i,700i";
+@import "https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text:400,400i,600i,700i";
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 0.3em; }
+
+h3 {
+  font-style: italic;
+  letter-spacing: -.3px;
+  margin: 0; }
 
 .header {
   border-bottom: 2px solid black;
@@ -19,10 +28,10 @@ h1, h2, h3, h4, h5, h6 {
     .header__contact p {
       font-size: 1.3em;
       margin: 0;
-      text-align: right; }
-      @media (max-width: 700px) {
+      text-align: left; }
+      @media (min-width: 700px) {
         .header__contact p {
-          text-align: left; } }
+          text-align: right; } }
     .header__contact .github:before {
       content: url("../../img/GitHub.svg"); }
   .header__name {
@@ -45,16 +54,17 @@ h1, h2, h3, h4, h5, h6 {
 .job {
   line-height: 100%;
   margin-bottom: 15px; }
-  @media (max-width: 625px) {
+  @media (max-width: 624px) {
     .job__title {
       display: block;
       margin: 5px auto; } }
   @media (min-width: 625px) {
-    .job__dates {
-      float: right; } }
+    .job__details {
+      display: flex;
+      justify-content: space-between; } }
   .job__employer {
     font-weight: bold; }
-    @media (max-width: 625px) {
+    @media (max-width: 624px) {
       .job__employer {
         display: block;
         margin: 5px auto; } }
@@ -79,6 +89,12 @@ h1, h2, h3, h4, h5, h6 {
   .activity__role {
     font-style: italic; }
 
+a:link {
+  text-decoration: none;
+  color: inherit; }
+  a:link:hover {
+    text-decoration: underline; }
+
 body {
   background-color: #fffff8;
   color: #111111;
@@ -90,16 +106,9 @@ body {
 main {
   display: flex;
   justify-content: space-between; }
-  main h2 {
-    font-style: italic;
-    font-weight: 600;
-    margin-bottom: 0.3em; }
-  main h3 {
-    display: inline;
-    font-style: italic;
-    letter-spacing: -.3px; }
-  main p {
-    margin: .25em auto; }
+
+p {
+  margin: .25em auto; }
 
 .details {
   width: 60%;
@@ -108,12 +117,8 @@ main {
 .miscellanea {
   width: 40%; }
 
-@media (max-width: 700px) {
-  .sm-hide {
-    display: none; } }
-
-a:link {
-  text-decoration: none;
-  color: inherit; }
-  a:link:hover {
-    text-decoration: underline; }
+.sm-hide {
+  display: none; }
+  @media (min-width: 700px) {
+    .sm-hide {
+      display: block; } }

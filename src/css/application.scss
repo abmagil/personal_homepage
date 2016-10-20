@@ -1,10 +1,19 @@
-@import 'https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text:400,400i,600,600i,700i';
+@import 'https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text:400,400i,600i,700i';
 
+@import "variables";
 @import "headers";
 @import "header";
 @import "job";
 @import "skills";
 @import "activity";
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 body {
   background-color: #fffff8;
@@ -18,22 +27,10 @@ body {
 main {
   display: flex;
   justify-content: space-between;
+}
 
-  h2 {
-    font-style: italic;
-    font-weight: bold;
-    margin-bottom: 0.3em;
-  }
-
-  h3 {
-    display: inline;
-    font-style: italic;
-    letter-spacing: -.3px;
-  }
-
-  p {
-    margin: .25em auto;
-  }
+p {
+  margin: .25em auto;
 }
 
 .details {
@@ -46,15 +43,9 @@ main {
 }
 
 .sm-hide {
-  @media (max-width: 700px) {
-    display: none;
-  }
-}
+  display: none;
 
-a:link {
-  text-decoration: none;
-  color: inherit;
-  &:hover {
-    text-decoration: underline;
+  @media (min-width: ($header-breakpoint)) {
+    display: block;
   }
 }

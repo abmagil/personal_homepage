@@ -8,7 +8,7 @@ section.job
     - url = value.url
   p
     span.job__employer: a(target="_blank" href=url) #{value.employer}
-    |, #{value.address}
+      |, #{value.address}
   ul.job__responsibilities
     each val in value.responsibilities
       li= val
