@@ -10,16 +10,6 @@ module.exports = {
           "Graduating GPA 3.48/4.00",
           "Dean's list Spring 2008-2009"
       ]
-    },
-    {
-      educator: "Boston University Academy",
-      address: "Boston, MA",
-      url: "//www.buacademy.org",
-      level: "High school diploma",
-      endDate: new Date(2005, 5),
-      honors: [
-        "Graduated cum laude"
-      ]
     }
   ],
   workHistory: [
@@ -31,11 +21,14 @@ module.exports = {
       url: "//www.societyofgrownups.com",
       address: "Brookline, MA",
       responsibilities: [
-        "Support development of financial literacy application",
-        "Responsible for implementing screens per design",
-        "Implemented and improved technical framework for content display",
-        "Owned large legacy financial planning application, with conversion to stateless service",
-        "Developed career growth framework for developers with Dir. Engineering"
+        "Inherited and owned large ruby financial planning service",
+        "Upgraded this service, including features, documentation, testing, and a conversion to ruby 2",
+        "Effected a technical pivot from server-side to client-side advisory capacities",
+        "Work as part of a team on a financial literacy application",
+        "Defined and codified a framework for developers to discuss career growth with their manager",
+        "Rewrote code test for ruby candidates, a tic-tac-toe challenge",
+        "Refined and published job requirements and descriptions",
+        "Delivered brownbags on technical topics to developer and non-technical audiences"
       ]
     },
     {
@@ -46,13 +39,12 @@ module.exports = {
       url: "//www.camsys.com",
       address: "Cambridge, MA",
       responsibilities: [
-        "Work as part of a team under the direction of a tech lead",
-        "Responsible for on-time delivery of functionalities",
-        "Responsible for deployment to QA and Production environments",
-        "Act as client-facing Data Quality engineer",
-        "Act as local Rails expert, aid in troubleshooting, bug hunting.  Lead upgrade to Rails 4",
-        "Participate in architectural design and planning with an eye for modularity and extensibility",
-        "Work independently, seeking help as necessary"
+        "Worked as part of a team under the direction of a tech lead",
+        "Deployed application to QA and Production environments",
+        "Worked with clients to ensure data quality and import",
+        "Acted as Rails resource for coworkers, aided in troubleshooting, bug hunting",
+        "Led upgrade to Rails 4",
+        "Participated in architectural design and planning with an eye for modularity and extensibility"
       ]
     },
     {
@@ -64,9 +56,9 @@ module.exports = {
       address: "Cambridge, MA",
       responsibilities: [
         "Support and Lead QA engineer for multiple projects of varied nature",
-        "Held ultimate responsibility for ensuring that projects met client specifications and desires",
-        "Required to create and maintain QA plans",
-        "Required to create and maintain automated test suites using SilkTest/Silk4J"
+        "Responsible for ensuring that projects met client specifications and desires",
+        "Created and executed QA plans",
+        "Implemented and maintained automated test suites using SilkTest/Silk4J"
       ]
     },
     {
@@ -77,8 +69,8 @@ module.exports = {
       url: "//www.epic.com",
       address: "Madison, WI",
       responsibilities: [
-        "Communicated issues and resolutions to internal and external members of varying technical understanding",
-        "Determined root cause of issues and set sustainable solutions and workflows to allow customer to succeed",
+        "Communicated issues and resolutions to internal and external team members of varying technical understanding",
+        "Determined root causes of issues and set sustainable solutions and workflows to allow customer to succeed",
         "Developed small programs to ease and simplify workflows",
         "Provided weekly program updates to external CIO during crisis escalation",
         "Routinely solved technical problems for large healthcare organization"
@@ -113,6 +105,11 @@ module.exports = {
     {
       name: "Boston Ruby Group",
       startDate: "2014"
+    },
+    {
+      name: "BUDA Ultimate Frisbee",
+      startDate: "2005",
+      role: "Captain, Player"
     }
   ],
   formatDate: function(date) {

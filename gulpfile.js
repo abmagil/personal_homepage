@@ -7,20 +7,17 @@ var path       = require('path');
 var pug        = require('gulp-pug');
 var scss       = require('gulp-scss');
 var wrap       = require('gulp-wrap');
-var jobsData   = require('./my-story');
-
-
-gulp.task('reload', function() {
-  jobsData = require('./my-story');
-});
+var reload     = require('require-reload')(require);
 
 gulp.task('compile:pug', function() {
+  var personalStory = reload("./my-story.js");
+
   gulp.src('src/templates/_*.pug')
     .pipe(pug())
     .pipe(gulp.dest(''));
 
   gulp.src('index.pug')
-    .pipe(pug({locals: jobsData}))
+    .pipe(pug({locals: personalStory}))
     .pipe(gulp.dest('build/'))
     .pipe(livereload());
 });
@@ -44,7 +41,7 @@ gulp.watch('index.pug', ['compile:pug']);
 gulp.watch('src/templates/*.pug', ['compile:pug']);
 gulp.watch('gulpfile.js', ['all']);
 gulp.watch('src/css/*.scss', ['compile:css'])
-gulp.watch('./my-story.js', ['reload', 'compile:pug'])
+gulp.watch('./my-story.js', ['compile:pug'])
 
 gulp.task("watch", function() {
   livereload.listen();
@@ -52,5 +49,5 @@ gulp.task("watch", function() {
 
 // Default task
 gulp.task('all', ['copy', 'compile:pug', 'compile:css']);
-gulp.task('default', ["reload", "watch"])
+gulp.task('default', ["watch"])
 
