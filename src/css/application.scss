@@ -28,24 +28,35 @@ body {
   padding: 0 20px;
 }
 
+
 main {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  .miscellanea, .details {
+    width: 100%;
+  }
+
+  @media print, (min-width: $header-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .details {
+      width: 60%;
+      margin-right: 30px;
+    }
+
+    .miscellanea {
+      width: 40%;
+      font-size: 14px;
+    }
+  }
 }
 
 p {
   margin: .25em auto;
 }
 
-.details {
-  width: 60%;
-  margin-right: 30px;
-}
-
-.miscellanea {
-  width: 40%;
-  font-size: 14px;
-}
 
 .sm-hide {
   @media screen {

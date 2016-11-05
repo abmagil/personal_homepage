@@ -3,17 +3,11 @@
   margin-bottom: 15px;
 
   &__title {
-    @media screen and (max-width: $body-breakpoint) {
-      display: block;
-      margin: 5px auto
-    }
   }
 
   &__details {
-    @media print, (min-width: $body-breakpoint + 1) {
       display: flex;
       justify-content: space-between;
-    }
   }
 
   &__employer {
