@@ -107,7 +107,7 @@ module.exports = {
       startDate: "2014"
     },
     {
-      name: "BUDA Ultimate Frisbee",
+      name: "BUDA, USAU ultimate frisbee",
       startDate: "2005",
       role: "Captain, Player"
     }
