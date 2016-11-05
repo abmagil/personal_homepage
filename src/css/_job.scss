@@ -3,14 +3,14 @@
   margin-bottom: 15px;
 
   &__title {
-    @media (max-width: 624px) {
+    @media screen and (max-width: $body-breakpoint) {
       display: block;
       margin: 5px auto
     }
   }
 
   &__details {
-    @media (min-width: 625px) {
+    @media print, (min-width: $body-breakpoint + 1) {
       display: flex;
       justify-content: space-between;
     }
@@ -19,7 +19,7 @@
   &__employer {
     font-weight: bold;
 
-    @media (max-width: 624px) {
+    @media (max-width: $body-breakpoint) {
       display: block;
       margin: 5px auto
     }

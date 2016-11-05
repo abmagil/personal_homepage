@@ -3,7 +3,7 @@
   font-family: Cinzel, sans-serif;
   font-weight: 100;
 
-  @media (min-width: ($header-breakpoint)) {
+  @media print, (min-width: ($header-breakpoint)) {
     display: flex;
     justify-content: space-between;
   }
@@ -19,7 +19,7 @@
       font-size: 1.3em;
       margin: 0;
       text-align: left;
-      @media (min-width: ($header-breakpoint)) {
+      @media print, (min-width: ($header-breakpoint)) {
         text-align: right;
       }
     }
@@ -40,7 +40,7 @@
 
   &__personal {
     .home-address {
-      @media (min-width: ($header-breakpoint)) {
+      @media print, (min-width: ($header-breakpoint)) {
         display: flex;
         flex-wrap: wrap;
       }

@@ -7,9 +7,11 @@
 @import "skills";
 @import "activity";
 
-a:link {
-  text-decoration: none;
-  color: inherit;
+a {
+  &:link, &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
   &:hover {
     text-decoration: underline;
   }
@@ -43,9 +45,10 @@ p {
 }
 
 .sm-hide {
-  display: none;
-
-  @media (min-width: ($header-breakpoint)) {
-    display: block;
+  @media screen {
+    display: none;
+    @media (min-width: ($header-breakpoint)) {
+      display: block;
+    }
   }
 }
