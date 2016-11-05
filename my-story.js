@@ -86,11 +86,14 @@ module.exports = {
     },
   ],
   skills: {
-    technical: [
-      "Ruby", "Elixir", "HTML", "CSS", "JS", "SQL"
+    fluence: [
+      "Ruby", "Rails", "SQL", "git", "Heroku",
     ],
-    tools: [
-      "Rails", "Ember 2+", "Heroku", "SCSS", "rspec"
+    professional: [
+      "Ember 2+", "Elixir", "Phoenix", "HTML", "(S)CSS", "JS/ES6", "Scrum"
+    ],
+    working: [
+      "React", "Linux"
     ]
   },
   activities: [
