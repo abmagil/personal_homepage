@@ -5,10 +5,11 @@ section.job
       time #{locals.formatDate(value.startDate)}
       |&ndash;
       time #{locals.formatDate(value.endDate)}
-    - url = value.url
   p
-    span.job__employer: a(target="_blank" href=url) #{value.employer}
-      |, #{value.address}
+    - url = value.url
+    span.job__employer
+      a(target="_blank" href=url) #{value.employer}
+    |, #{value.address}
   ul.job__responsibilities
     each val in value.responsibilities
       li= val

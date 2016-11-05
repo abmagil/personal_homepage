@@ -1,28 +1,27 @@
 module.exports = {
-  education: {
-    data: [
+  education: [
       {
-        location: "Carnegie Mellon University",
+        educator: "Carnegie Mellon University",
         url: "www.cmu.edu",
         level: "B.S Chemistry",
         address: "Pittsburgh, PA",
-        startDate: new Date(2005, 8),
         endDate: new Date(2009, 5),
         honors: [
           "Graduating GPA 3.48/4.00",
           "Dean's list Spring 2008-2009"
-        ]
-      },
-      {
-        location: "Boston University Academy",
-        url: "www.buacademy.org",
-        level: "High School diploma",
-        honors: [
-          "Graduated cum laude"
-        ]
-      }
-    ]
-  },
+      ]
+    },
+    {
+      educator: "Boston University Academy",
+      address: "Boston, MA",
+      url: "www.buacademy.org",
+      level: "High school diploma",
+      endDate: new Date(2005, 5),
+      honors: [
+        "Graduated cum laude"
+      ]
+    }
+  ],
   workHistory: [
     {
       role: "Software Developer",

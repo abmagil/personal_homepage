@@ -2,10 +2,12 @@
 
 @import "variables";
 @import "headers";
+@import "lists";
 @import "header";
 @import "job";
 @import "skills";
 @import "activity";
+@import "education";
 
 a {
   &:link, &:visited {
@@ -21,7 +23,7 @@ body {
   background-color: #fffff8;
   color: #111111;
   font-family: 'Crimson Text', serif;
-  max-width: 1000px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -42,6 +44,7 @@ p {
 
 .miscellanea {
   width: 40%;
+  font-size: 14px;
 }
 
 .sm-hide {
