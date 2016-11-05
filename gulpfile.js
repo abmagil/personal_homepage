@@ -28,6 +28,8 @@ gulp.task('compile:pug', function() {
 gulp.task('copy', function(){
   gulp.src('src/css/*.css')
     .pipe(gulp.dest('build/css/'));
+  gulp.src('src/img/*')
+    .pipe(gulp.dest('build/img/'));
 });
 
 gulp.task('compile:css', function() {
