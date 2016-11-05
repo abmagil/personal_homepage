@@ -2,7 +2,7 @@ module.exports = {
   education: [
       {
         educator: "Carnegie Mellon University",
-        url: "www.cmu.edu",
+        url: "//www.cmu.edu",
         level: "B.S Chemistry",
         address: "Pittsburgh, PA",
         endDate: new Date(2009, 5),
@@ -14,7 +14,7 @@ module.exports = {
     {
       educator: "Boston University Academy",
       address: "Boston, MA",
-      url: "www.buacademy.org",
+      url: "//www.buacademy.org",
       level: "High school diploma",
       endDate: new Date(2005, 5),
       honors: [
@@ -28,7 +28,7 @@ module.exports = {
       startDate: new Date(2015, 3),
       endDate: null,
       employer: "Society of Grownups",
-      url: "www.societyofgrownups.com",
+      url: "//www.societyofgrownups.com",
       address: "Brookline, MA",
       responsibilities: [
         "Support development of financial literacy application",
@@ -43,7 +43,7 @@ module.exports = {
       startDate: new Date(2014, 0),
       endDate: new Date(2015, 3),
       employer: "Cambridge Systematics, Inc.",
-      url: "www.cambridgesystematics.com",
+      url: "//www.camsys.com",
       address: "Cambridge, MA",
       responsibilities: [
         "Work as part of a team under the direction of a tech lead",
@@ -60,7 +60,7 @@ module.exports = {
       startDate: new Date(2012, 3),
       endDate: new Date(2014, 0),
       employer: "Cambridge Systematics, Inc.",
-      url: "www.cambridgesystematics.com",
+      url: "//www.cambridgesystematics.com",
       address: "Cambridge, MA",
       responsibilities: [
         "Support and Lead QA engineer for multiple projects of varied nature",
@@ -74,7 +74,7 @@ module.exports = {
       startDate: new Date(2011, 3),
       endDate: new Date(2012, 0),
       employer: "Epic Systems",
-      url: "www.epic.com",
+      url: "//www.epic.com",
       address: "Madison, WI",
       responsibilities: [
         "Communicated issues and resolutions to internal and external members of varying technical understanding",
