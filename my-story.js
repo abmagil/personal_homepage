@@ -23,7 +23,7 @@ module.exports = {
       responsibilities: [
         "Inherited and owned large ruby financial planning service",
         "Upgraded this service, including features, documentation, testing, and a conversion to ruby 2",
-        "Effected a technical pivot from server-side to client-side advisory capacities",
+        "Effected a technical pivot from server- to client-side advisory capacities to better serve user needs",
         "Work as part of a team on a financial literacy application",
         "Defined and codified a framework for developers to discuss career growth with their manager",
         "Rewrote code test for ruby candidates, a tic-tac-toe challenge",
