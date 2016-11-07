@@ -14,8 +14,9 @@
         include src/templates/job
     </div>
     <div class="miscellanea">
-      <h2>Technical Skills</h2>
-        include src/templates/skills
+      <h2>Technical Experience</h2>
+        each value in locals.technicalSkills
+          include src/templates/skills
       <h2>Activities</h2>
         each value in locals.activities
           include src/templates/activity

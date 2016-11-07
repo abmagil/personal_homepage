@@ -7,8 +7,7 @@ module.exports = {
         address: "Pittsburgh, PA",
         endDate: new Date(2009, 5),
         honors: [
-          "Graduating GPA 3.48/4.00",
-          "Dean's list Spring 2008-2009"
+          "Graduating GPA 3.48/4.00"
       ]
     }
   ],
@@ -21,14 +20,13 @@ module.exports = {
       url: "//www.societyofgrownups.com",
       address: "Brookline, MA",
       responsibilities: [
-        "Inherited and owned large ruby financial planning service",
-        "Upgraded this service, including features, documentation, testing, and a conversion to ruby 2",
-        "Effected a technical pivot from server- to client-side advisory capacities to better serve user needs",
-        "Work as part of a team on a financial literacy application",
+        "Owned large legacy Ruby service, including features, documentation, and testing",
+        "Upgraded this service to Ruby 2",
+        "Established the Society of Grownups ruby styleguide",
+        "Prototyped and developed client-side financial advisory solutions",
         "Defined and codified a framework for developers to discuss career growth with their manager",
-        "Rewrote code test for ruby candidates, a tic-tac-toe challenge",
-        "Refined and published job requirements and descriptions",
-        "Delivered brownbags on technical topics to developer and non-technical audiences"
+        "Core contributer in the succesful recruitment of three developers",
+        "Organized multiple brownbags on technical topics"
       ]
     },
     {
@@ -39,12 +37,12 @@ module.exports = {
       url: "//www.camsys.com",
       address: "Cambridge, MA",
       responsibilities: [
-        "Worked as part of a team under the direction of a tech lead",
-        "Deployed application to QA and Production environments",
-        "Worked with clients to ensure data quality and import",
-        "Acted as Rails resource for coworkers, aided in troubleshooting, bug hunting",
-        "Led upgrade to Rails 4",
-        "Participated in architectural design and planning with an eye for modularity and extensibility"
+        "Owned full lifecycle for features, including production deployments",
+        "Wrote custom import software to consume client data assets",
+        "Subject matter expert in Rails, aiding fellow developers in troubleshooting and bug hunting",
+        "Upgraded asset management platform from Rails 3 to Rails 4",
+        "Contributed to architectural design and planning",
+        "Initiated and led Software Brown Bag series"
       ]
     },
     {
@@ -55,8 +53,7 @@ module.exports = {
       url: "//www.cambridgesystematics.com",
       address: "Cambridge, MA",
       responsibilities: [
-        "Support and Lead QA engineer for multiple projects of varied nature",
-        "Responsible for ensuring that projects met client specifications and desires",
+        "Lead QA engineer for multiple projects of varied nature",
         "Created and executed QA plans",
         "Implemented and maintained automated test suites using SilkTest/Silk4J"
       ]
@@ -69,25 +66,27 @@ module.exports = {
       url: "//www.epic.com",
       address: "Madison, WI",
       responsibilities: [
-        "Communicated issues and resolutions to internal and external team members of varying technical understanding",
-        "Determined root causes of issues and set sustainable solutions and workflows to allow customer to succeed",
-        "Developed small programs to ease and simplify workflows",
-        "Provided weekly program updates to external CIO during crisis escalation",
+        "Communicated issues and resolutions to internal and external stakeholders",
+        "Determined root causes of issues and set sustainable solutions and workflows",
+        "Developed programs to ease and simplify workflows",
+        "Reported weekly updates to external CIO during crisis escalation",
         "Routinely solved technical problems for large healthcare organization"
       ]
     },
   ],
-  skills: {
-    fluence: [
-      "Ruby", "Rails", "SQL", "git", "Heroku",
-    ],
-    professional: [
-      "Ember 2+", "Elixir", "Phoenix", "HTML", "(S)CSS", "JS/ES6", "Scrum"
-    ],
-    working: [
-      "React", "Linux"
-    ]
-  },
+  technicalSkills: [
+    {
+      company: "Society of Grownups",
+      technologies: [
+        "Ruby/Rails", "Ember 2", "HTML", "(S)CSS",
+        "JS/ES2015", "Elixir/Phoenix"
+      ]
+    },
+    {
+      company: "Cambridge Systematics",
+      technologies: ["Ruby/Rails", "Sinatra", "C#.NET"]
+    }
+  ],
   activities: [
     {
       name: "haystack",
@@ -97,7 +96,7 @@ module.exports = {
       startDate: "2014"
     },
     {
-      name: "SBU Brown Bag Series",
+      name: "Cambridge Systematics Software Brown Bag Series",
       role: "Organizer",
       startDate: "2014",
       endDate: "2015"
