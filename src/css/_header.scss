@@ -14,9 +14,12 @@
     flex-wrap: wrap;
     font-style: normal;
     justify-content: flex-end;
+    font-size: 1em;
+    @media print, (min-width: ($header-breakpoint)) {
+      font-size: 1.3em;
+    }
 
     p {
-      font-size: 1.3em;
       margin: 0;
       text-align: left;
       @media print, (min-width: ($header-breakpoint)) {
@@ -31,7 +34,10 @@
 
   &__name {
     font-weight: lighter;
-    font-size: 60px;
+    font-size: 2.5em;
+    @media print, (min-width: ($header-breakpoint)) {
+      font-size: 3.75em;
+    }
     letter-spacing: -2px;
     line-height: 80%;
     margin: 0;
@@ -45,7 +51,7 @@
         flex-wrap: wrap;
       }
       
-      font-size: 20px;
+      font-size: 1.25em;
       justify-content: space-between;
 
       *:first-child {

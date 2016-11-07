@@ -1,3 +1,4 @@
+var autoprefixer = require('gulp-autoprefixer');
 var concat     = require('gulp-concat');
 var gulp       = require('gulp');
 var livereload = require('gulp-livereload');
@@ -32,6 +33,7 @@ gulp.task('copy', function(){
 gulp.task('compile:css', function() {
   gulp.src("src/css/application.scss")
   .pipe(scss())
+  .pipe(autoprefixer())
   .pipe(concat('application.css'))
   .pipe(gulp.dest("build/css/"))
   .pipe(livereload());
