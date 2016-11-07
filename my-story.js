@@ -74,18 +74,9 @@ module.exports = {
       ]
     },
   ],
-  technicalSkills: [
-    {
-      company: "Society of Grownups",
-      technologies: [
-        "Ruby/Rails", "Ember 2", "HTML", "(S)CSS",
-        "JS/ES2015", "Elixir/Phoenix"
-      ]
-    },
-    {
-      company: "Cambridge Systematics",
-      technologies: ["Ruby/Rails", "Sinatra", "C#.NET"]
-    }
+  skills: [
+      "Ruby/Rails", "Sinatra", "Ember 2", "HTML", "(S)CSS", "JS/ES2015",
+      "Elixir/Phoenix"
   ],
   activities: [
     {
