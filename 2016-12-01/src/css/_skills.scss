@@ -1,0 +1,21 @@
+.skills {
+  line-height: 100%;
+  margin-bottom: 15px;
+
+  &__position {
+    font-style: italic;
+    display: block;
+    margin: 0;
+  }
+
+  &__tech {
+    margin: 0;
+    order: 0;
+    font-style: normal;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}

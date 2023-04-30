@@ -1,0 +1,12 @@
+.education {
+  line-height: 100%;
+  margin-bottom: 15px;
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__location {
+    font-weight: bold;
+  }
+}

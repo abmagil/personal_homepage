@@ -1,0 +1,15 @@
+section.job
+  .job__details
+    h3.job__title #{value.role}
+    span.job__dates
+      time #{locals.formatDate(value.startDate)}
+      |&ndash;
+      time #{locals.formatDate(value.endDate)}
+  p
+    - url = value.url
+    span.job__employer
+      a(target="_blank" href=url) #{value.employer}
+    |, #{value.address}
+  ul.job__responsibilities
+    each val in value.responsibilities
+      li= val

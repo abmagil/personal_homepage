@@ -1,0 +1,16 @@
+.watrline-page {
+  .emphasis {
+    font-style: oblique;
+  }
+
+  dl {
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+  }
+  dt {
+    &::after {
+      content: ":"
+    }
+  }  
+}

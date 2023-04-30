@@ -1,0 +1,15 @@
+.activity
+  span.activity__dates
+    span #{value.startDate}
+    |&ndash;
+    span #{value.endDate}
+  if value.url
+    - url = value.url
+    p.activity__name
+      a(href=url) #{value.name}
+      |&nbsp;#{value.description}
+  else
+    p.activity__name #{value.name}
+      |&nbsp;#{value.description}
+  if value.role
+    .activity__role (#{value.role})

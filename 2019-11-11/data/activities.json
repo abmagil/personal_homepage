@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Watrline",
+    "description": "spending planner",
+    "url": "/watrline",
+    "role": "Author, Maintainer",
+    "startDate": "2015"
+  },
+  {
+    "name": "haystack",
+    "description": "search gem",
+    "url": "https://rubygems.org/gems/haystack",
+    "role": "Author, Maintainer",
+    "startDate": "2014"
+  },
+  {
+    "name": "Cambridge Systematics Software Brown Bag Series",
+    "role": "Organizer",
+    "startDate": "2014",
+    "endDate": "2015"
+  },
+  {
+    "name": "Boston Ruby Group",
+    "startDate": "2014",
+    "endDate": "2016"
+  },
+  {
+    "name": "BUDA, USAU ultimate frisbee",
+    "startDate": "2005",
+    "role": "Captain, Player"
+  }
+]

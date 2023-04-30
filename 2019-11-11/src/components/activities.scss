@@ -1,0 +1,15 @@
+.activity {
+  margin-bottom: 5px;
+
+  &__name {
+    margin-bottom: 0;
+  }
+  
+  &__dates {
+    float: right;
+  }
+
+  &__role {
+    font-style: italic;
+  }
+}

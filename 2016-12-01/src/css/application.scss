@@ -1,0 +1,69 @@
+@import 'https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text:400,400i,600i,700i';
+
+@import "variables";
+@import "headers";
+@import "lists";
+@import "header";
+@import "job";
+@import "skills";
+@import "activity";
+@import "education";
+
+a {
+  &:link, &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  background-color: #fffff8;
+  color: #111111;
+  font-family: 'Crimson Text', serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  .miscellanea, .details {
+    width: 100%;
+  }
+
+  @media print, (min-width: $header-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .details {
+      width: 60%;
+      margin-right: 30px;
+    }
+
+    .miscellanea {
+      width: 40%;
+    }
+  }
+}
+
+p {
+  margin: .25em auto;
+}
+
+.container {
+  max-width: 950px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sm-hide {
+  @media screen {
+    display: none;
+    @media (min-width: ($header-breakpoint)) {
+      display: block;
+    }
+  }
+}

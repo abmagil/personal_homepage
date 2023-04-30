@@ -1,0 +1,16 @@
+.job {
+  line-height: 100%;
+  margin-bottom: 15px;
+
+  &__title {
+  }
+
+  &__details {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  &__employer {
+    font-weight: bold;
+  }
+}

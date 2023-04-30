@@ -1,0 +1,62 @@
+[
+  {
+    "role": "Senior Software Engineer",
+    "startDate": "2017-02-01T05:00:00.000Z",
+    "employer": "Vistaprint",
+    "url": "//www.vistaprint.com",
+    "address": "Waltham, MA",
+    "responsibilities": [
+      "Led development and product planning for Header As A Service, supporting entire Vistaprint website implemented in both vanilla JS and React",
+      "Lead conversion of existing Vistaprint UI Library into NPM packages, including decomposition and automatic deployments via GitLab CI, providing support for newly decoupled front-ends",
+      "Focused my team on direct feedback culture- lead to introduction of multiple team ceremonies to build soft skills",
+      "Designed technical architecture to support migration of 800M customer assets from legacy monolith to modern AWS microservice. Managed team of three in implementation.",
+      "Lead developer for multiple React-based WYSIWYG editors on the Vistaprint website, including project planning."
+    ]
+  },
+  {
+    "role": "Software Developer",
+    "startDate": "2015-04-01T04:00:00.000Z",
+    "endDate": "2016-11-01T04:00:00.000Z",
+    "employer": "Society of Grownups",
+    "url": "//www.societyofgrownups.com",
+    "address": "Brookline, MA",
+    "responsibilities": [
+      "Owned large legacy Ruby service, including features, documentation, and testing",
+      "Upgraded this service to Ruby 2",
+      "Established the Society of Grownups ruby styleguide",
+      "Prototyped and developed client-side financial advisory solutions",
+      "Defined and codified a framework for developers to discuss career growth with their manager",
+      "Core contributer in the succesful recruitment of three developers",
+      "Organized multiple brownbags on technical topics"
+    ]
+  },
+  {
+    "role": "Software Developer",
+    "startDate": "2014-01-01T05:00:00.000Z",
+    "endDate": "2015-04-01T04:00:00.000Z",
+    "employer": "Cambridge Systematics, Inc.",
+    "url": "//www.camsys.com",
+    "address": "Cambridge, MA",
+    "responsibilities": [
+      "Owned full lifecycle for features, including production deployments",
+      "Wrote custom import software to consume client data assets",
+      "Subject matter expert in Rails, aiding fellow developers in troubleshooting and bug hunting",
+      "Upgraded asset management platform from Rails 3 to Rails 4",
+      "Contributed to architectural design and planning",
+      "Initiated and led Software Brown Bag series"
+    ]
+  },
+  {
+    "role": "Software QA",
+    "startDate": "2012-04-01T04:00:00.000Z",
+    "endDate": "2014-01-01T05:00:00.000Z",
+    "employer": "Cambridge Systematics, Inc.",
+    "url": "//www.cambridgesystematics.com",
+    "address": "Cambridge, MA",
+    "responsibilities": [
+      "Lead QA engineer for multiple projects of varied nature",
+      "Created and executed QA plans",
+      "Implemented and maintained automated test suites using SilkTest/Silk4J"
+    ]
+  }
+]
