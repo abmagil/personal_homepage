@@ -15,7 +15,7 @@ module.exports = {
     {
       role: "Software Developer",
       startDate: new Date(2015, 3),
-      endDate: null,
+      endDate: new Date(2016, 10),
       employer: "Society of Grownups",
       url: "//www.societyofgrownups.com",
       address: "Brookline, MA",
